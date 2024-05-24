@@ -30,4 +30,4 @@ response: {"result": bool}
 Testy:
 Funkcje do testowania kaźdego z endpointów znajdują się w tests.py
 
-Z zewnątrz dokera aplikacja jest dostępna na porcie 5001(http://127.0.0.1:5001/)
+Z zewnątrz dokera aplikacja jest dostępny na porcie 5001(http://127.0.0.1:5001/)
