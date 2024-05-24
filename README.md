@@ -4,27 +4,27 @@ Projekt serwuje aplikację napisaną w Flask, która wystawia rest api pozwalaj�
 
 Lista end pointów api:
 
-endpoint: /models
-method: GET
+endpoint: /models,
+method: GET,
 response: {"models": list}
 
-endpoint: /create
-method: POST
-payload: {"name": str, "eta": float, "n_iter": int}
+endpoint: /create,
+method: POST,
+payload: {"name": str, "eta": float, "n_iter": int},
 response: {"id": int, "name": str}
 
-endpoint: /fit/<int:model_id>
-method: PUT
-payload: {"X": list, "y": list}
+endpoint: /fit/<int:model_id>,
+method: PUT,
+payload: {"X": list, "y": list},
 response: {"id": int, "name": str, 'errors': list}
 
-endpoint: /predict/<int:model_id>
-method: PUT
-payload: {"X": list}
+endpoint: /predict/<int:model_id>,
+method: PUT,
+payload: {"X": list},
 response: {"id": int, "name": str, 'predictions': list}
 
-endpoint: delete/<int:model_id>
-method: DELETE
+endpoint: delete/<int:model_id>,
+method: DELETE,
 response: {"result": bool}
 
 Testy:
